@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@900&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Bolder | home</title>
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>Bolder</h1>
+        </div>
+         <div class="nav__item">
+           <ul class="nav__links">
+             <li><i class="fa-solid fa-gear"></i></li>
+             <li><i class="fa-solid fa-bell"></i></li>
+             <li><i class="fa-solid fa-toggle-on"></i></li>
+           </ul>
+          <div class="account">
+            <div id="acc-img"><img src="image/ab.jfif" alt="user"></div>
+            <div class="acc-drop-down">
+              <h1>Abraham Elebute</h1>
+              <h3><em> Airblast</em></h3>
+              <ul>
+                <li><i class="fa-solid fa-gear"></i>Setting</li>
+                <li><i class="fa-solid fa-pen-to-square"></i>Edit</li>
+                <li><i class="fa-solid fa-trash-can"></i>Delete account</li>
+              </ul>
+              <p>elebuteimisioluwa@gmail.com</p>
+            </div>
+         </div>
+       </nav>
+      </header>
+
+
+      
+      <script>
+     let accImg = document.querySelector("#acc-img");
+     let accDropDown = document.querySelector(".acc-drop-down");
+     accImg.addEventListener("click",function(){
+      accDropDown.classList.toggle("accopen")
+     }) 
+      </script>
+</body>
+</html>

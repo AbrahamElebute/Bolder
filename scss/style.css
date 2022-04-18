@@ -1,0 +1,210 @@
+header {
+  height: 40vh;
+  background-color: red;
+}
+
+header nav {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: linear-gradient(45deg, orangered, yellow);
+}
+
+header nav .logo h1 {
+  margin: 0;
+  border-left: 6px red solid;
+  font-size: 2em;
+  font-family: 'Kanit', sans-serif;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 320px) {
+  header nav .logo h1 {
+    font-size: 1.5em;
+  }
+}
+
+header nav .nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .nav__item .nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+  margin: 0;
+  margin-right: 20px;
+}
+
+header nav .nav__item .nav__links li {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+  header nav .nav__item .nav__links {
+    font-size: 17px;
+    width: 100px;
+  }
+}
+
+header nav .nav__item .account {
+  padding: 2px;
+  position: relative;
+}
+
+header nav .nav__item .account img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px white solid;
+  cursor: pointer;
+  -webkit-transition: 0.8;
+  transition: 0.8;
+}
+
+header nav .nav__item .account img:hover {
+  border-color: black;
+}
+
+@media screen and (max-width: 320px) {
+  header nav .nav__item .account img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+header nav .nav__item .account .acc-drop-down {
+  visibility: hidden;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-box-shadow: -4px 8px 12px 0px black;
+          box-shadow: -4px 8px 12px 0px black;
+  height: 300px;
+  width: 250px;
+  right: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header nav .nav__item .account .acc-drop-down h1 {
+  margin: 0;
+  padding-top: 10px;
+}
+
+header nav .nav__item .account .acc-drop-down h3 {
+  margin: 0;
+  color: rgba(128, 128, 128, 0.473);
+  font-size: 18px;
+  text-transform: lowercase;
+}
+
+header nav .nav__item .account .acc-drop-down ul {
+  padding: 0;
+}
+
+header nav .nav__item .account .acc-drop-down ul li {
+  padding: 10px;
+  position: relative;
+  text-align: left;
+  list-style: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+header nav .nav__item .account .acc-drop-down ul li::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 44px;
+  width: 12px;
+  background-color: red;
+  -webkit-transform: translate(-22px, -6.6px);
+          transform: translate(-22px, -6.6px);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+header nav .nav__item .account .acc-drop-down ul li:hover::before {
+  -webkit-transform: translate(-15px, -6.6px);
+          transform: translate(-15px, -6.6px);
+}
+
+header nav .nav__item .account .acc-drop-down ul li:hover {
+  background-color: rgba(128, 128, 128, 0.473);
+  -webkit-transform: translatey(1px);
+          transform: translatey(1px);
+}
+
+header nav .nav__item .account .acc-drop-down ul li i {
+  padding-right: 15px;
+  font-size: 18px;
+}
+
+header nav .nav__item .account .acc-drop-down p {
+  background-color: rgba(128, 128, 128, 0.473);
+  font-size: 14px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+header nav .nav__item .account .acc-drop-down::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  -webkit-transform: translate(214px, -4px) rotate(47deg);
+          transform: translate(214px, -4px) rotate(47deg);
+}
+
+header nav .nav__item .account .accopen {
+  visibility: visible;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */
