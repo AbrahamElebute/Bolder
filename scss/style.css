@@ -30,7 +30,7 @@ header nav .logo h1 {
   margin: 0;
   border-left: 6px red solid;
   font-size: 2em;
-  font-family: sans-serif;
+  font-family: 'Fredoka One', cursive;
   padding-left: 2px;
 }
 
@@ -573,7 +573,6 @@ main .box-container .box {
   border-radius: 10px;
   -webkit-transition: 1s;
   transition: 1s;
-  outline: 1px black solid;
   margin: 20px;
 }
 
@@ -784,14 +783,44 @@ main #add:hover {
 }
 
 .form-div .remove {
-  background-color: red;
   position: absolute;
   right: 0;
   top: 0;
   margin: 20px;
-  height: 30px;
-  width: 30px;
   cursor: pointer;
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .form-div .remove {
+    top: -16px;
+    right: -18px;
+  }
+}
+
+.form-div .remove:hover {
+  background-image: linear-gradient(15deg, orangered, yellow);
+  color: white;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0px -2px 2px black;
+          box-shadow: 0px -2px 2px black;
 }
 
 @media screen and (max-width: 320px) {
@@ -802,9 +831,8 @@ main #add:hover {
 
 .form-div .form {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1167%26quot%3b)' fill='none'%3e%3cpath d='M77.95 65.77L142.91 103.27L142.91 178.27L77.95 215.77L13 178.27L13 103.27zM272.81 -46.73L337.77 -9.23L337.77 65.77L272.81 103.27L207.86 65.77L207.86 -9.23zM402.72 -46.73L467.68 -9.23L467.68 65.77L402.72 103.27L337.77 65.77L337.77 -9.23zM402.72 178.27L467.68 215.77L467.68 290.77L402.72 328.27L337.77 290.77L337.77 215.77zM662.54 -46.73L727.49 -9.23L727.49 65.77L662.54 103.27L597.58 65.77L597.58 -9.23zM857.4 290.77L922.35 328.27L922.35 403.27L857.4 440.77L792.44 403.27L792.44 328.27zM792.44 403.27L857.4 440.77L857.4 515.77L792.44 553.27L727.49 515.77L727.49 440.77zM987.31 290.77L1052.26 328.27L1052.26 403.27L987.31 440.77L922.35 403.27L922.35 328.27zM1052.26 178.27L1117.21 215.77L1117.21 290.77L1052.26 328.27L987.31 290.77L987.31 215.77zM1506.94 290.77L1571.89 328.27L1571.89 403.27L1506.94 440.77L1441.98 403.27L1441.98 328.27z' stroke='rgba(247%2c 143%2c 4%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M70.45 65.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM135.41 103.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM135.41 178.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM70.45 215.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM5.5 178.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM5.5 103.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM265.31 -46.73 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM330.27 -9.23 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM330.27 65.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM265.31 103.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM200.36 65.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM200.36 -9.23 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM395.22 -46.73 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM460.18 -9.23 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM460.18 65.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM395.22 103.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM395.22 178.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM460.18 215.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM460.18 290.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM395.22 328.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM330.27 290.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM330.27 215.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM655.04 -46.73 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM719.99 -9.23 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM719.99 65.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM655.04 103.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM590.08 65.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM590.08 -9.23 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM849.9 290.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM914.85 328.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM914.85 403.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM849.9 440.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM784.94 403.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM784.94 328.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM849.9 515.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM784.94 553.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM719.99 515.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM719.99 440.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM979.81 290.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1044.76 328.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1044.76 403.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM979.81 440.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1044.76 178.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1109.71 215.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1109.71 290.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM979.81 215.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1499.44 290.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1564.39 328.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1564.39 403.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1499.44 440.77 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1434.48 403.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1434.48 328.27 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0z' fill='rgba(247%2c 143%2c 4%2c 1)'%3e%3c/path%3e%3cpath d='M38.13 422.57L83.16 448.57L83.16 500.57L38.13 526.57L-6.9 500.57L-6.9 448.57zM173.23 32.57L218.27 58.57L218.27 110.57L173.23 136.57L128.2 110.57L128.2 58.57zM128.2 266.57L173.23 292.57L173.23 344.57L128.2 370.57L83.16 344.57L83.16 292.57zM218.27 -45.43L263.3 -19.43L263.3 32.57L218.27 58.57L173.23 32.57L173.23 -19.43zM308.34 422.57L353.37 448.57L353.37 500.57L308.34 526.57L263.3 500.57L263.3 448.57zM398.41 -45.43L443.44 -19.43L443.44 32.57L398.41 58.57L353.37 32.57L353.37 -19.43zM443.44 500.57L488.48 526.57L488.48 578.57L443.44 604.57L398.41 578.57L398.41 526.57zM488.48 -45.43L533.51 -19.43L533.51 32.57L488.48 58.57L443.44 32.57L443.44 -19.43zM488.48 110.57L533.51 136.57L533.51 188.57L488.48 214.57L443.44 188.57L443.44 136.57zM533.51 344.57L578.55 370.57L578.55 422.57L533.51 448.57L488.48 422.57L488.48 370.57zM578.55 422.57L623.58 448.57L623.58 500.57L578.55 526.57L533.51 500.57L533.51 448.57zM758.68 -45.43L803.72 -19.43L803.72 32.57L758.68 58.57L713.65 32.57L713.65 -19.43zM803.72 344.57L848.75 370.57L848.75 422.57L803.72 448.57L758.68 422.57L758.68 370.57zM893.79 32.57L938.82 58.57L938.82 110.57L893.79 136.57L848.75 110.57L848.75 58.57zM1254.06 32.57L1299.1 58.57L1299.1 110.57L1254.06 136.57L1209.03 110.57L1209.03 58.57zM1209.03 266.57L1254.06 292.57L1254.06 344.57L1209.03 370.57L1164 344.57L1164 292.57zM1344.13 188.57L1389.17 214.57L1389.17 266.57L1344.13 292.57L1299.1 266.57L1299.1 214.57zM1299.1 422.57L1344.13 448.57L1344.13 500.57L1299.1 526.57L1254.06 500.57L1254.06 448.57z' stroke='rgba(243%2c 196%2c 2%2c 0.93)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1167'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-  -webkit-animation: bg-pan-tr 8s linear infinite alternate both;
-  animation: bg-pan-tr 8s linear infinite alternate both;
   background-color: white;
+  background-size: cover;
   height: 90vh;
   width: 70vh;
   padding: 10px;
@@ -812,31 +840,13 @@ main #add:hover {
   font-family: 'Poppins', sans-serif;
 }
 
-@-webkit-keyframes bg-pan-tr {
-  0% {
-    background-position: 0% 100%;
-  }
-  100% {
-    background-position: 100% 0%;
-  }
-}
-
-@keyframes bg-pan-tr {
-  0% {
-    background-position: 0% 100%;
-  }
-  100% {
-    background-position: 100% 0%;
-  }
-}
-
 @media screen and (max-width: 320px) {
-  .form-div .form h1 {
-    font-size: 20px;
+  .form-div .form h2 {
+    font-size: 10px;
   }
 }
 
-.form-div .form h1 span {
+.form-div .form h2 .social {
   background-image: linear-gradient(15deg, orangered, yellow);
   background-clip: text;
   -webkit-background-clip: text;
@@ -881,7 +891,13 @@ main #add:hover {
 
 @media screen and (max-width: 320px) {
   .form-div .form div h2 {
-    font-size: 17px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-div .form div h2 {
+    font-size: 19px;
   }
 }
 
@@ -895,6 +911,12 @@ main #add:hover {
 @media screen and (max-width: 320px) {
   .form-div .form div h2 input {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-div .form div h2 input {
+    font-size: 19px;
   }
 }
 
@@ -938,6 +960,8 @@ main #add:hover {
 
 .sign-form-div {
   z-index: 1000000;
+  visibility: visible;
+  opacity: 1;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -952,6 +976,8 @@ main #add:hover {
   width: 100vw;
   top: 0;
   background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .sign-form-div .sign-form {
@@ -1025,6 +1051,19 @@ main #add:hover {
   padding: 6px;
 }
 
+@media screen and (max-width: 768px) {
+  .sign-form-div .sign-form div button {
+    font-size: 19px;
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+  }
+}
+
+.sub-active {
+  visibility: hidden;
+  opacity: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -1058,5 +1097,86 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background-image: linear-gradient(45deg, yellow, orangered);
+}
+
+.spinner-div {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000000000000000000000;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+.spinner-div h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.spinner-div .spinner {
+  position: relative;
+  width: 90px;
+  height: 90px;
+}
+
+.spinner-div .spinner::before,
+.spinner-div .spinner::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  -webkit-animation: spinner-rfi6tk 1s infinite linear;
+          animation: spinner-rfi6tk 1s infinite linear;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 18px solid rgba(251, 142, 0, 0.1);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.spinner-div .spinner::before {
+  animation-direction: reverse;
+  border-right-color: #fb8e00;
+  right: calc(50% - 6px);
+}
+
+.spinner-div .spinner::after {
+  border-left-color: #fb8e00;
+  left: calc(50% - 6px);
+  z-index: 1000;
+}
+
+@-webkit-keyframes spinner-rfi6tk {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50%, 100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner-rfi6tk {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50%, 100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+footer {
+  background-color: aquamarine;
 }
 /*# sourceMappingURL=style.css.map */

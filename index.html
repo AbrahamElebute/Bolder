@@ -6,11 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&display=swap" rel="stylesheet">
-
+    <link rel="apple-touch-icon" sizes="180x180" href="image/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded",signlocal)
+      function signlocal(){
+      if(localStorage.getItem("sign-in") === "yes"){
+        document.querySelector(".sign-form-div").style.display = "none";
+      }
+     }
+    </script>
     <title>Bolder | home</title>
 </head>
 <body>
+  <div class="spinner-div">
+    <h1 class="h1one">Loading</h1>
+    <div class="spinner"></div>
+    <h1 class="h1two">Bolder...</h1>
+  </div>
+
     <header>
       <nav>
         <div class="logo">
@@ -26,7 +43,7 @@
                   <div class="ball"></div>
                 </label>
              </li>
-             <li class="bell" title="notification"><i class="fa-solid fa-bell"></i></li>
+             <li class="bell" title="notification"><a href="https://www.youtube.com/channel/UC2uixYTJ-ZI2FqqGZUbZ-gw" target="_blank" style="text-decoration: none; color: black;"><i class="fa-solid fa-bell"></i></a></li>
            </ul>
           <div class="account" title="User">
             <div id="acc-img"><img src="image/ab.jfif" alt="user"></div>
@@ -48,7 +65,7 @@
       </div>
 
       </header>
-     <!-- <div class="sign-form-div">
+     <div class="sign-form-div">
       <div class="sign-form">
         <h1>sign-in</h1>
         <p>Hey start by signing in!</p>
@@ -57,10 +74,10 @@
           <h2>Nick-Name:<input type="text" placeholder="Nick-Name"></h2>
           <h2>Picture:<input type="file" ></h2>
           <h2>Email:<input type="email" placeholder="Email"></h2>
-          <button>submit</button>
+          <button id="sub">submit</button>
         </div>
       </div>
-     </div> -->
+     </div>
    <main>
      <div class="site">
       <h2>Sites</h2>
@@ -223,10 +240,10 @@
       <div id="add" title="add new"><h4><i class="fa-solid fa-plus"></i></h4></div>
    </main>
      <div class="form-div">
-      <div class="remove"></div>
+      <div class="remove"><i class="fa-solid fa-xmark"></i></div>
 
       <div class="form">
-        <h1>Save your <span>Social media Password</span> with Bolder</h1>
+        <h2>Save your <span class="social">Social media Password</span> with Bolder</h1>
         <p>All you Password and links are save to your localstorage</p>
         <img src="image/pe.jpg" alt="">
         <div>
@@ -240,10 +257,17 @@
         </div>
       </div>
      </div>
+ <footer>
+  </footer>
       <script>
+        window.addEventListener("load",function(){
+          spinnerDiv.style.display="none"
+        })
      let accImg = document.querySelector("#acc-img");
      let addEl = document.querySelector("#add");
+     let subEl = document.querySelector("#sub");
      let accDropDown = document.querySelector(".acc-drop-down");
+     let spinnerDiv = document.querySelector(".spinner-div");
      accImg.addEventListener("click",function(){
       accDropDown.classList.toggle("accopen")
      }) 
@@ -258,6 +282,11 @@
      document.querySelector(".remove").addEventListener("click",function(){
       document.querySelector(".form-div").classList.remove('form-active')
      })
+     subEl.addEventListener("click",function(){
+      document.querySelector(".sign-form-div").classList.add('sub-active')
+      localStorage.setItem("sign-in","yes")
+     })
+// localStorage.clear()
       </script>
 </body>
 </html>
